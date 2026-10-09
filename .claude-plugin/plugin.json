@@ -1,0 +1,8 @@
+{
+  "name": "step-explainer",
+  "version": "1.0.0",
+  "description": "为 Claude Code 的每一步操作自动附加一行中文大白话解释（含 /explain 命令）",
+  "author": {
+    "name": "kbananana"
+  }
+}

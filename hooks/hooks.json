@@ -1,0 +1,17 @@
+{
+  "description": "PreToolUse 中文步骤解释：每步操作前显示一行中文标注，不干预任何操作",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Edit|Write|WebFetch|WebSearch|Agent|Task|AskUserQuestion",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/explain-step.js\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

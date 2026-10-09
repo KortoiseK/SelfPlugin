@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "step-explainer-marketplace",
+  "description": "中文步骤解释器：为 Claude Code 的每一步操作自动附加一行中文大白话解释",
+  "owner": {
+    "name": "kbananana"
+  },
+  "plugins": [
+    {
+      "name": "step-explainer",
+      "description": "为 Claude Code 每一步操作（执行命令、修改文件、联网、提问）自动附加一行中文大白话解释；附带 /explain 命令和静音开关",
+      "author": {
+        "name": "kbananana"
+      },
+      "source": "./"
+    }
+  ]
+}
